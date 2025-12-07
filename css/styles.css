@@ -174,7 +174,8 @@ a:hover {
     background: rgba(13, 17, 23, 0.85);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--border-color);
-    z-index: 1000;
+    z-index: 9999;
+    /* Force top */
     display: flex;
     align-items: center;
 }
@@ -496,9 +497,19 @@ main {
 
 .footer-content {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     gap: 1.5rem;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column-reverse;
+        /* Stack with socials on top or bottom preference */
+        gap: 1rem;
+    }
 }
 
 /* Responsive Overrides */
