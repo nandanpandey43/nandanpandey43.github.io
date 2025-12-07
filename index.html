@@ -16,24 +16,57 @@
 
     <main class="container">
         <!-- Hero Section -->
-        <section class="flex flex-col justify-center items-center text-center fade-in" style="min-height: 60vh;">
-            <div
-                style="width: 150px; height: 150px; background: var(--bg-secondary); border-radius: 50%; margin-bottom: 2rem; border: 2px solid var(--border-color);">
-                <!-- Profile Placeholder -->
-                <img src="./assets/profile.jpg" alt="Profile"
-                    style="width: 100%; height: 100%; border-radius: 50%; object-fit: cover; opacity: 0.8;"
-                    onerror="this.style.display='none'">
-            </div>
+        <section class="hero-section fade-in">
+            <div class="hero-grid">
+                <!-- Left: Profile Image -->
+                <div class="hero-profile">
+                    <div class="profile-img-container">
+                        <img src="./assets/profile.jpg" alt="Profile" class="profile-img"
+                            onerror="this.style.display='none'">
+                    </div>
+                </div>
 
-            <h1 style="font-size: 3rem; margin-bottom: 1rem;">Backend Developer</h1>
-            <p class="text-secondary" style="font-size: 1.25rem; max-width: 600px; margin-bottom: 2rem;">
-                Building scalable APIs, distributed systems, and robust database architectures.
-                Turn complex problems into efficient code.
-            </p>
+                <!-- Right: Content & Skills -->
+                <div class="hero-content">
+                    <h1 class="hero-title">Backend<br>Developer</h1>
+                    <p class="hero-intro">
+                        Architecting scalable APIs, distributed systems, and robust database architectures.
+                        Turning complex business logic into efficient, maintainable code.
+                    </p>
 
-            <div class="flex gap-md">
-                <a href="./projects.html" class="btn btn-primary">View Projects</a>
-                <a href="mailto:contact@example.com" class="btn">Contact Me</a>
+                    <div class="skills-panel">
+                        <div class="skills-title">Core Technologies</div>
+                        <ul class="skills-list">
+                            <li class="skill-badge">Go</li>
+                            <li class="skill-badge">Node.js</li>
+                            <li class="skill-badge">PostgreSQL</li>
+                            <li class="skill-badge">Redis</li>
+                            <li class="skill-badge">Docker</li>
+                            <li class="skill-badge">gRPC</li>
+                            <li class="skill-badge">AWS</li>
+                        </ul>
+                    </div>
+
+                    <div class="flex gap-md" style="align-items: center;">
+                        <a href="./projects.html" class="btn btn-primary">View Projects</a>
+                        <a href="mailto:contact@example.com" class="btn">Contact Me</a>
+                    </div>
+
+                    <div class="hero-metrics">
+                        <div class="metric-item">
+                            <strong>5+</strong>
+                            <span>Years Exp.</span>
+                        </div>
+                        <div class="metric-item">
+                            <strong>20+</strong>
+                            <span>Projects</span>
+                        </div>
+                        <div class="metric-item">
+                            <strong>100%</strong>
+                            <span>Uptime</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
