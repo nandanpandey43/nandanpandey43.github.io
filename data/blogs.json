@@ -1,0 +1,16 @@
+[
+    {
+        "id": "1",
+        "title": "Understanding Database Indexing",
+        "date": "2023-10-15",
+        "excerpt": "A deep dive into how B-Trees and Hash Indexes work under the hood.",
+        "filename": "database-indexing.md"
+    },
+    {
+        "id": "2",
+        "title": "Go Concurrency Patterns",
+        "date": "2023-11-02",
+        "excerpt": "Exploring channels, goroutines, and common concurrency patterns in Go.",
+        "filename": "go-concurrency.md"
+    }
+]

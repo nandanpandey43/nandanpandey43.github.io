@@ -1,0 +1,38 @@
+[
+    {
+        "title": "Distributed Task Queue",
+        "description": "A high-performance distributed task queue system built with Go and Redis. Features persistent storage, retry mechanisms, and concurrent worker pools.",
+        "stack": [
+            "Go",
+            "Redis",
+            "Docker",
+            "gRPC"
+        ],
+        "github": "https://github.com/username/task-queue",
+        "live": "#"
+    },
+    {
+        "title": "E-commerce Microservices",
+        "description": "Scalable e-commerce backend with microservices architecture. Includes auth, product catalog, cart, and order services.",
+        "stack": [
+            "Node.js",
+            "Express",
+            "PostgreSQL",
+            "RabbitMQ"
+        ],
+        "github": "https://github.com/username/ecommerce-microservices",
+        "live": "https://api.example.com"
+    },
+    {
+        "title": "Real-time Chat API",
+        "description": "WebSocket-based chat API supporting private messaging, group chats, and read receipts.",
+        "stack": [
+            "Python",
+            "FastAPI",
+            "MongoDB",
+            "WebSockets"
+        ],
+        "github": "https://github.com/username/chat-api",
+        "live": "#"
+    }
+]

@@ -1,0 +1,14 @@
+[
+    {
+        "company": "Tech Solutions Inc.",
+        "role": "Senior Backend Engineer",
+        "duration": "2021 - Present",
+        "description": "Leading the backend team in migrating legacy monoliths to microservices. Improved API response time by 40%."
+    },
+    {
+        "company": "Startup Hub",
+        "role": "Backend Developer",
+        "duration": "2019 - 2021",
+        "description": "Built RESTful APIs for mobile applications. Implemented CI/CD pipelines using GitHub Actions."
+    }
+]
