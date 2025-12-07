@@ -333,7 +333,9 @@ main {
     font-weight: 800;
     margin-bottom: var(--spacing-md);
     background: linear-gradient(135deg, var(--text-primary) 0%, var(--accent-color) 100%);
+    background-clip: text;
     -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     -webkit-text-fill-color: transparent;
     display: inline-block;
 }
@@ -449,4 +451,17 @@ main {
         justify-content: center;
         width: 100%;
     }
+}
+
+/* Social Icons */
+.social-icon {
+    width: 24px;
+    height: 24px;
+    fill: var(--text-secondary);
+    transition: fill 0.2s ease, transform 0.2s ease;
+}
+
+.social-link:hover .social-icon {
+    fill: var(--accent-color);
+    transform: translateY(-2px);
 }
