@@ -276,53 +276,68 @@ main {
     }
 }
 
-/* --- HERO REDESIGN & POLISH --- */
+/* --- HERO REFINTEMENT & POLISH --- */
 
-/* 1. Hero Layout - Shifted & Balanced */
+/* 1. Hero Layout - Restored & Balanced */
 .hero-section {
-    min-height: 90vh;
+    min-height: 85vh;
+    /* Reduced top vertical space */
     display: flex;
     align-items: center;
-    padding: var(--spacing-xl) 0;
-    margin-left: -2%;
-    /* Slight shift left */
+    padding: var(--spacing-lg) 0;
+    /* Reduced padding */
 }
 
 .hero-grid {
     display: grid;
-    grid-template-columns: 0.8fr 1.2fr;
-    /* More space for text */
+    grid-template-columns: 1fr 1.5fr;
+    /* Standard balanced split */
     gap: 4rem;
-    /* Increased spacing */
+    /* Increased spacing for breathing room */
     align-items: center;
+    /* Vertical alignment */
     width: 100%;
 }
 
-/* 2. Profile Image - Gradient Ring (Option A) */
+/* 2. Profile Image - Clean Professional Circle (Option B/Refined) */
 .hero-profile {
     display: flex;
     justify-content: flex-end;
+    /* Align right to face text */
     position: relative;
+    padding-right: 2rem;
+    /* Ensure space from gap */
 }
 
 .profile-img-container {
-    width: 300px;
-    height: 300px;
+    width: 280px;
+    height: 280px;
     border-radius: 50%;
-    padding: 6px;
-    /* Space for gradient */
-    background: linear-gradient(135deg, var(--accent-color), #bc8cff);
-    /* Gradient Border */
-    box-shadow: 0 10px 30px -10px rgba(88, 166, 255, 0.4);
-    /* Soft glow */
+    /* Subtle, elegant glow */
+    box-shadow: 0 0 0 1px var(--border-color), 0 20px 40px -10px rgba(0, 0, 0, 0.5);
     position: relative;
     z-index: 1;
+    background: var(--bg-secondary);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-img-container::after {
+    content: '';
+    position: absolute;
+    inset: -2px;
+    border-radius: 50%;
+    padding: 2px;
+    background: linear-gradient(135deg, rgba(88, 166, 255, 0.5), rgba(188, 140, 255, 0.2));
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
 }
 
 .profile-img-container:hover {
     transform: translateY(-5px);
-    box-shadow: 0 15px 40px -10px rgba(88, 166, 255, 0.6);
+    box-shadow: 0 25px 50px -12px rgba(88, 166, 255, 0.15);
 }
 
 .profile-img {
@@ -330,87 +345,78 @@ main {
     height: 100%;
     object-fit: cover;
     border-radius: 50%;
-    border: 4px solid var(--bg-secondary);
-    /* Inner border to separate image from gradient */
     background: var(--bg-secondary);
-    transition: transform 0.3s ease;
 }
 
-/* 3. Typography & Spacing */
+/* 3. Hero Content Hierarchy */
 .hero-content {
     text-align: left;
-    max-width: 650px;
+    max-width: 700px;
 }
 
 .hero-title {
-    font-size: 4rem;
+    font-size: 3.75rem;
+    /* Large but not overwhelming */
     line-height: 1.1;
     font-weight: 800;
-    margin-bottom: 1rem;
-    background: linear-gradient(135deg, #fff 0%, var(--accent-color) 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    display: inline-block;
-    letter-spacing: -1px;
+    margin-bottom: 1.5rem;
+    letter-spacing: -1.5px;
+    color: var(--text-primary);
 }
 
 .hero-intro {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     line-height: 1.7;
     color: var(--text-secondary);
     margin-bottom: 2rem;
     max-width: 90%;
 }
 
-/* 4. Social Icons Row (Hero) */
+/* 4. Social Icons */
 .hero-social {
     display: flex;
     gap: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
+    /* Clean separation before tech stack */
 }
 
 .social-btn {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 36px;
-    height: 36px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.05);
+    background: var(--bg-secondary);
     border: 1px solid var(--border-color);
     transition: all 0.2s ease;
 }
 
 .social-btn svg {
-    width: 18px;
-    height: 18px;
+    width: 20px;
+    height: 20px;
     fill: var(--text-secondary);
     transition: fill 0.2s ease;
 }
 
 .social-btn:hover {
-    background: var(--accent-color);
     border-color: var(--accent-color);
     transform: translateY(-2px);
+    background: rgba(88, 166, 255, 0.05);
 }
 
 .social-btn:hover svg {
-    fill: #fff;
+    fill: var(--accent-color);
 }
 
-/* 5. Tech Badges */
+/* 5. Tech Stack Badges */
 .skills-panel {
-    background: transparent;
-    border: none;
-    padding: 0;
     margin-bottom: 2.5rem;
-    backdrop-filter: none;
 }
 
 .skills-title {
     font-family: var(--font-mono);
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     text-transform: uppercase;
     letter-spacing: 1.5px;
     color: var(--text-secondary);
@@ -422,37 +428,31 @@ main {
 .skills-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 12px;
-    list-style: none;
+    gap: 10px;
 }
 
 .skill-badge {
     font-family: var(--font-mono);
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     color: var(--text-primary);
-    background: rgba(255, 255, 255, 0.03);
+    background: transparent;
     padding: 6px 12px;
     border-radius: 6px;
     border: 1px solid var(--border-color);
     transition: all 0.2s ease;
-    box-shadow: var(--shadow-sm);
 }
 
 .skill-badge:hover {
-    background: rgba(88, 166, 255, 0.1);
     border-color: var(--accent-color);
     color: var(--accent-color);
-    transform: translateY(-1px);
+    background: rgba(88, 166, 255, 0.05);
 }
 
-/* 6. CTA Buttons */
-
-
-/* 7. Stats Section */
+/* 6. Stats Section */
 .hero-metrics {
     display: flex;
-    gap: 3rem;
-    margin-top: 3rem;
+    gap: 4rem;
+    margin-top: 3.5rem;
     padding-top: 2rem;
     border-top: 1px solid rgba(48, 54, 61, 0.5);
     animation: fadeIn 0.8s ease-out forwards;
@@ -460,76 +460,67 @@ main {
 
 .metric-item strong {
     display: block;
-    font-size: 2.5rem;
-    background: linear-gradient(to right, #fff, #8b949e);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    font-size: 3rem;
+    /* Increased size */
+    color: var(--text-primary);
     line-height: 1;
     font-weight: 800;
+    letter-spacing: -1px;
 }
 
 .metric-item span {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
+    /* Smaller labels */
     color: var(--text-secondary);
     text-transform: uppercase;
-    letter-spacing: 0.5px;
-    margin-top: 5px;
+    letter-spacing: 1px;
+    margin-top: 8px;
     display: block;
+    font-weight: 500;
 }
 
-/* Hero Responsive */
-@media (max-width: 768px) {
+/* Footer Refinements */
+.footer {
+    padding: 3rem 0;
+    background: var(--bg-primary);
+    /* Blend with body */
+    border-top: 1px solid var(--border-color);
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+/* Responsive Overrides */
+@media (max-width: 900px) {
     .hero-grid {
         grid-template-columns: 1fr;
-        gap: var(--spacing-lg);
+        gap: 3rem;
         text-align: center;
     }
 
     .hero-profile {
         justify-content: center;
-    }
-
-    .profile-img-container {
-        width: 220px;
-        height: 220px;
+        padding-right: 0;
+        margin-bottom: 1rem;
     }
 
     .hero-content {
         text-align: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        margin: 0 auto;
     }
 
-    .hero-title {
-        font-size: 2.5rem;
-    }
-
-    .skills-panel {
-        border-left: none;
-        border-top: 3px solid var(--accent-color);
-        border-radius: 0 0 var(--radius-md) var(--radius-md);
-        text-align: left;
-        width: 100%;
-        max-width: 400px;
+    .hero-social,
+    .skills-list {
+        justify-content: center;
     }
 
     .hero-metrics {
         justify-content: center;
-        width: 100%;
+        gap: 2rem;
     }
-}
-
-/* Social Icons */
-.social-icon {
-    width: 24px;
-    height: 24px;
-    fill: var(--text-secondary);
-    transition: all 0.2s ease;
-}
-
-.social-link:hover .social-icon {
-    fill: var(--accent-color);
-    transform: translateY(-3px);
 }
