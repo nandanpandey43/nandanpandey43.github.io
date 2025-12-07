@@ -12,5 +12,12 @@
         "date": "2023-11-02",
         "excerpt": "Exploring channels, goroutines, and common concurrency patterns in Go.",
         "filename": "go-concurrency.md"
+    },
+    {
+        "id": "3",
+        "title": "Async vs Defer in Javascript",
+        "date": "2020-12-25",
+        "excerpt": "Understanding the critical differences in script loading strategies for performance.",
+        "externalLink": "https://nandankpandey.medium.com/async-vs-defer-in-javascript-921abba974f7"
     }
 ]
