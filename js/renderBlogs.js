@@ -12,7 +12,7 @@ export async function initBlogs() {
     if (!list) return;
 
     list.innerHTML = '<div class="text-center">Loading posts...</div>';
-    const blogs = await loadJSON('/data/blogs.json');
+    const blogs = await loadJSON('./data/blogs.json');
 
     if (!blogs) {
         list.innerHTML = '<div class="text-center text-secondary">Failed to load blogs.</div>';
@@ -40,7 +40,7 @@ export async function initBlogDetail() {
     // For simplicity, we fetch the MD content.
     // If we want title/date from JSON, we need to fetch blogs.json again or pass it.
     // Let's fetch blogs.json to find metadata first.
-    const blogs = await loadJSON('/data/blogs.json');
+    const blogs = await loadJSON('./data/blogs.json');
     const meta = blogs ? blogs.find(b => b.filename === filename) : null;
 
     if (meta) {
@@ -48,7 +48,7 @@ export async function initBlogDetail() {
         if (dateEl) dateEl.textContent = formatDate(meta.date);
     }
 
-    const markdown = await loadMarkdown(`/blogs/${filename}`);
+    const markdown = await loadMarkdown(`./blogs/${filename}`);
 
     if (!markdown) {
         container.innerHTML = '<p>Failed to load content.</p>';

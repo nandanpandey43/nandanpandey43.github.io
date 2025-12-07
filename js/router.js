@@ -17,24 +17,23 @@ export class Router {
 
     highlightActiveLink() {
         const links = document.querySelectorAll('.nav-links a');
-
-        // Normalize path handling for GitHub Pages project roots if needed
-        // For now, simple exact matching or trailing slash handling
-        let path = this.currentPath;
-        if (path.endsWith('/') && path !== '/') {
-            path = path.slice(0, -1);
-        }
-
-        // Handle root
-        if (path === '/' || path.endsWith('index.html')) {
-            const homeLink = document.querySelector('.nav-links a[href="/"]');
-            if (homeLink) homeLink.classList.add('active');
-            return;
-        }
+        const currentPath = window.location.pathname.replace(/\/$/, ""); // Strip trailing slash
 
         links.forEach(link => {
             const href = link.getAttribute('href');
-            if (href && path.includes(href) && href !== '/') {
+            if (!href) return;
+
+            // Resolve relative href to absolute path for comparison
+            const linkUrl = new URL(href, window.location.href);
+            const linkPath = linkUrl.pathname.replace(/\/$/, "");
+
+            // Main check: exact match
+            if (linkPath === currentPath) {
+                link.classList.add('active');
+            }
+            // Handle index/root equivalence
+            else if ((linkPath.endsWith('index.html') && currentPath === linkPath.replace('/index.html', '')) ||
+                (currentPath.endsWith('index.html') && linkPath === currentPath.replace('/index.html', ''))) {
                 link.classList.add('active');
             }
         });

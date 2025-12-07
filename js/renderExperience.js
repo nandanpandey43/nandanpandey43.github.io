@@ -5,7 +5,7 @@ export async function initExperience() {
     if (!timeline) return;
 
     timeline.innerHTML = '<div class="text-center">Loading experience...</div>';
-    const experience = await loadJSON('/data/experience.json');
+    const experience = await loadJSON('./data/experience.json');
 
     if (!experience) {
         timeline.innerHTML = '<div class="text-center">Failed to load experience.</div>';

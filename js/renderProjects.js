@@ -7,7 +7,7 @@ export async function initProjects() {
 
     grid.innerHTML = '<div class="text-center">Loading projects...</div>';
 
-    const projects = await loadJSON('/data/projects.json');
+    const projects = await loadJSON('./data/projects.json');
 
     if (!projects) {
         grid.innerHTML = '<div class="text-center text-secondary">Failed to load projects.</div>';
