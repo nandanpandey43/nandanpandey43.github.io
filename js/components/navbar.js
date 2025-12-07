@@ -1,7 +1,7 @@
 export const Navbar = () => `
     <nav class="navbar">
         <div class="container nav-content">
-            <a href="./" class="nav-brand">DevPortfolio</a>
+            <a href="./" class="nav-brand">Nandan Pandey</a>
             <div class="nav-links">
                 <a href="./">Home</a>
                 <a href="./projects.html">Projects</a>
