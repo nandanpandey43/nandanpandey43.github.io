@@ -216,10 +216,13 @@ a:hover {
 
 /* Main Content Padding for Fixed Nav */
 main {
-    padding-top: calc(var(--nav-height) + var(--spacing-xl));
+    padding-top: calc(var(--nav-height) + 4rem);
+    /* Significantly increased clearance */
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    /* Ensure it sits below navbar z-9999 */
 }
 
 /* Cards */
@@ -286,7 +289,8 @@ main {
     display: flex;
     align-items: center;
     padding: var(--spacing-lg) 0;
-    /* Reduced padding */
+    margin-top: 2rem;
+    /* Extra safety margin from top */
 }
 
 .hero-grid {
