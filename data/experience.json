@@ -2,13 +2,26 @@
     {
         "company": "Tech Solutions Inc.",
         "role": "Senior Backend Engineer",
-        "duration": "2021 - Present",
-        "description": "Leading the backend team in migrating legacy monoliths to microservices. Improved API response time by 40%."
+        "duration": "2021 — Present",
+        "url": "",
+        "description": "Leading the backend team in migrating legacy monoliths to microservices. Improved API response time by 40%.",
+        "stack": ["Go", "PostgreSQL", "Redis", "Docker", "gRPC"]
     },
     {
         "company": "Startup Hub",
         "role": "Backend Developer",
-        "duration": "2019 - 2021",
-        "description": "Built RESTful APIs for mobile applications. Implemented CI/CD pipelines using GitHub Actions."
+        "duration": "2019 — 2021",
+        "url": "",
+        "description": "Built RESTful APIs for mobile applications. Implemented CI/CD pipelines using GitHub Actions.",
+        "stack": ["Node.js", "Express", "MongoDB", "GitHub Actions"]
+    },
+    {
+        "_template": true,
+        "company": "Company Name",
+        "role": "Your Role Title",
+        "duration": "YYYY — YYYY",
+        "url": "https://company-website.com",
+        "description": "Description of what you did, impact you made, and problems you solved.",
+        "stack": ["Tech1", "Tech2", "Tech3"]
     }
 ]

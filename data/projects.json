@@ -1,38 +1,57 @@
 [
     {
         "title": "Distributed Task Queue",
-        "description": "A high-performance distributed task queue system built with Go and Redis. Features persistent storage, retry mechanisms, and concurrent worker pools.",
+        "description": "High-throughput queueing system in Go with Redis-backed persistence, retries, and worker orchestration for async jobs.",
         "stack": [
             "Go",
             "Redis",
             "Docker",
             "gRPC"
         ],
-        "github": "https://github.com/username/task-queue",
-        "live": "#"
+        "github": "https://github.com/nandanpandey43",
+        "live": "",
+        "featured": true,
+        "category": "Infrastructure"
     },
     {
         "title": "E-commerce Microservices",
-        "description": "Scalable e-commerce backend with microservices architecture. Includes auth, product catalog, cart, and order services.",
+        "description": "Service-oriented backend for catalog, cart, and order workflows with event-driven communication and auth boundaries.",
         "stack": [
             "Node.js",
             "Express",
             "PostgreSQL",
             "RabbitMQ"
         ],
-        "github": "https://github.com/username/ecommerce-microservices",
-        "live": "https://api.example.com"
+        "github": "https://github.com/nandanpandey43",
+        "live": "",
+        "featured": true,
+        "category": "Backend"
     },
     {
         "title": "Real-time Chat API",
-        "description": "WebSocket-based chat API supporting private messaging, group chats, and read receipts.",
+        "description": "WebSocket-first messaging backend with room fanout, delivery acknowledgements, and persistence for chat history.",
         "stack": [
             "Python",
             "FastAPI",
             "MongoDB",
             "WebSockets"
         ],
-        "github": "https://github.com/username/chat-api",
-        "live": "#"
+        "github": "https://github.com/nandanpandey43",
+        "live": "",
+        "featured": false,
+        "category": "Real-time"
+    },
+    {
+        "_template": true,
+        "title": "Project Title",
+        "description": "Brief description of the project and what it solves.",
+        "stack": [
+            "Tech1",
+            "Tech2"
+        ],
+        "github": "https://github.com/your-repo",
+        "live": "https://live-demo-url.com",
+        "featured": false,
+        "category": "Category Name"
     }
 ]

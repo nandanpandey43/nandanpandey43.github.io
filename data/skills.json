@@ -1,0 +1,28 @@
+{
+    "languages": [
+        "Go",
+        "Node.js",
+        "Python",
+        "JavaScript",
+        "SQL"
+    ],
+    "databases": [
+        "PostgreSQL",
+        "Redis",
+        "MongoDB"
+    ],
+    "infrastructure": [
+        "Docker",
+        "Kubernetes",
+        "GitHub Actions",
+        "Terraform"
+    ],
+    "practices": [
+        "Microservices",
+        "Event-Driven Architecture",
+        "CI/CD",
+        "Observability",
+        "REST APIs",
+        "gRPC"
+    ]
+}

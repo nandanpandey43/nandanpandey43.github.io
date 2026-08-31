@@ -1,0 +1,32 @@
+{
+    "name": "Nandan Pandey",
+    "title": "Software Developer",
+    "tagline": "Building reliable backend systems that survive real traffic.",
+    "about": [
+        "I design APIs, queues, and data pipelines for products that need to scale without losing speed. My focus is clean architecture, observability, and infrastructure that teams can ship on with confidence.",
+        "I've spent 5+ years building backend systems — from monolith-to-microservice migrations to real-time event pipelines. I care about code that reads well, fails gracefully, and runs predictably under load."
+    ],
+    "email": "nandankpandey@gmail.com",
+    "social": {
+        "github": "https://github.com/nandanpandey43",
+        "linkedin": "https://www.linkedin.com/in/nandankpandey/",
+        "twitter": "",
+        "medium": "https://nandankpandey.medium.com"
+    },
+    "metrics": [
+        {
+            "value": "5+",
+            "label": "Years Backend Work"
+        },
+        {
+            "value": "20+",
+            "label": "Production APIs"
+        },
+        {
+            "value": "99.9%",
+            "label": "Target Uptime"
+        }
+    ],
+    "availability": "Open to backend engineering roles and freelance API architecture work.",
+    "resumePath": "./assets/resume.pdf"
+}
