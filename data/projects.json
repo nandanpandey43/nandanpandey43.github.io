@@ -1,45 +1,18 @@
 [
-    {
-        "title": "Distributed Task Queue",
-        "description": "High-throughput queueing system in Go with Redis-backed persistence, retries, and worker orchestration for async jobs.",
-        "stack": [
-            "Go",
-            "Redis",
-            "Docker",
-            "gRPC"
-        ],
-        "github": "https://github.com/nandanpandey43",
-        "live": "",
-        "featured": true,
-        "category": "Infrastructure"
-    },
-    {
-        "title": "E-commerce Microservices",
-        "description": "Service-oriented backend for catalog, cart, and order workflows with event-driven communication and auth boundaries.",
-        "stack": [
-            "Node.js",
-            "Express",
-            "PostgreSQL",
-            "RabbitMQ"
-        ],
-        "github": "https://github.com/nandanpandey43",
-        "live": "",
-        "featured": true,
-        "category": "Backend"
-    },
-    {
-        "title": "Real-time Chat API",
-        "description": "WebSocket-first messaging backend with room fanout, delivery acknowledgements, and persistence for chat history.",
+      {
+        "title": "Local Voice Chat with LLM",
+        "description": "An experimental offline voice assistant that converts speech to text with Whisper, sends prompts to a locally running LLM through Ollama, and converts responses back to speech.",
         "stack": [
             "Python",
-            "FastAPI",
-            "MongoDB",
-            "WebSockets"
+            "Whisper",
+            "Ollama",
+            "LLM",
+            "Speech-to-Text"
         ],
-        "github": "https://github.com/nandanpandey43",
+        "github": "https://github.com/nandanpandey43/Voice-control-LLM",
         "live": "",
-        "featured": false,
-        "category": "Real-time"
+        "featured": true,
+        "category": "AI"
     },
     {
         "_template": true,

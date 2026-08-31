@@ -1,28 +1,34 @@
 {
     "languages": [
-        "Go",
-        "Node.js",
-        "Python",
+        "TypeScript",
         "JavaScript",
+        "Go",
+        "Python",
         "SQL"
     ],
     "databases": [
         "PostgreSQL",
+        "MongoDB",
         "Redis",
-        "MongoDB"
+        "Neo4j"
     ],
     "infrastructure": [
+        "AWS Lambda",
+        "AWS SQS",
+        "AWS S3",
         "Docker",
         "Kubernetes",
-        "GitHub Actions",
-        "Terraform"
+        "Jenkins",
+        "PM2"
     ],
     "practices": [
+        "REST APIs",
         "Microservices",
         "Event-Driven Architecture",
-        "CI/CD",
+        "WebSockets",
+        "Server-Sent Events",
+        "Message Queues",
         "Observability",
-        "REST APIs",
         "gRPC"
     ]
 }

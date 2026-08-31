@@ -1,30 +1,16 @@
 [
-    {
+   {
         "id": "1",
-        "title": "Understanding Database Indexing",
-        "date": "2023-10-15",
-        "excerpt": "A deep dive into how B-Trees and Hash Indexes work under the hood.",
-        "filename": "database-indexing.md",
-        "externalLink": "",
-        "tags": ["databases", "performance", "postgresql"]
-    },
-    {
-        "id": "2",
-        "title": "Go Concurrency Patterns",
-        "date": "2023-11-02",
-        "excerpt": "Exploring channels, goroutines, and common concurrency patterns in Go.",
-        "filename": "go-concurrency.md",
-        "externalLink": "",
-        "tags": ["go", "concurrency", "backend"]
-    },
-    {
-        "id": "3",
         "title": "Async vs Defer in Javascript",
         "date": "2020-12-25",
-        "excerpt": "Understanding the critical differences in script loading strategies for performance.",
+        "excerpt": "Understanding the differences between async and defer script loading strategies and how they affect browser performance.",
         "filename": "",
         "externalLink": "https://nandankpandey.medium.com/async-vs-defer-in-javascript-921abba974f7",
-        "tags": ["javascript", "performance", "web"]
+        "tags": [
+            "javascript",
+            "performance",
+            "web"
+        ]
     },
     {
         "_template": true,
@@ -34,6 +20,9 @@
         "excerpt": "Short summary of the blog post.",
         "filename": "your-post-slug.md",
         "externalLink": "https://external-blog-url.com/your-post",
-        "tags": ["tag1", "tag2"]
+        "tags": [
+            "tag1",
+            "tag2"
+        ]
     }
 ]

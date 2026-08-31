@@ -1,19 +1,55 @@
 [
     {
-        "company": "Tech Solutions Inc.",
-        "role": "Senior Backend Engineer",
-        "duration": "2021 — Present",
-        "url": "",
-        "description": "Leading the backend team in migrating legacy monoliths to microservices. Improved API response time by 40%.",
-        "stack": ["Go", "PostgreSQL", "Redis", "Docker", "gRPC"]
+        "company": "SapidBlue",
+        "client": "Liongard",
+        "role": "Software Development Engineer 2",
+        "duration": "Sep 2025 — Present",
+        "url": "https://www.sapidblue.in/",
+        "description": "Working with Liongard's engineering team on cybersecurity integrations and inspectors, primarily using TypeScript/Node.js and AWS. Developing and maintaining integration workflows using services such as AWS Lambda, SQS, S3, and CloudWatch. Also contributed to the Go-based Liongard agent, working on inspector-related functionality and agent workflows.",
+        "stack": [
+            "TypeScript",
+            "Node.js",
+            "AWS Lambda",
+            "AWS SQS",
+            "AWS S3",
+            "CloudWatch",
+            "Go"
+        ]
     },
     {
-        "company": "Startup Hub",
-        "role": "Backend Developer",
-        "duration": "2019 — 2021",
-        "url": "",
-        "description": "Built RESTful APIs for mobile applications. Implemented CI/CD pipelines using GitHub Actions.",
-        "stack": ["Node.js", "Express", "MongoDB", "GitHub Actions"]
+        "company": "Deltatech Gaming Limited",
+        "role": "SDE-2",
+        "duration": "Nov 2022 — Sep 2025",
+        "url": "https://www.deltatech.gg/",
+        "description": "Worked on backend APIs and services for gaming and contest workflows, using Redis, PostgreSQL, MongoDB, and RabbitMQ. Contributed to real-time communication using WebSockets and Socket.IO, including Redis-backed scaling across multiple service instances. Also worked on Kafka-based request tracking and Snowflake analytics, and developed APIs supporting fraud analysis using Neo4j.",
+        "stack": [
+            "Node.js",
+            "TypeScript",
+            "NestJS",
+            "Redis",
+            "RabbitMQ",
+            "PostgreSQL",
+            "MongoDB",
+            "Kafka",
+            "WebSockets",
+            "Neo4j"
+        ]
+    },
+    {
+        "company": "MapmyIndia",
+        "role": "Software Developer L2",
+        "duration": "Oct 2021 — Nov 2022",
+        "url": "https://www.mapmyindia.com/",
+        "description": "Worked on the Pray mobile application (now Sanskriti), contributing to both the React Native app and its backend. Migrated the application's backend from Firebase to a custom Node.js/Express and MongoDB stack, building REST APIs and scheduled jobs. Also contributed to ONDC integration and implemented Server-Sent Events for real-time updates.",
+        "stack": [
+            "React Native",
+            "Node.js",
+            "Express.js",
+            "MongoDB",
+            "REST APIs",
+            "Server-Sent Events",
+            "ONDC"
+        ]
     },
     {
         "_template": true,
@@ -22,6 +58,10 @@
         "duration": "YYYY — YYYY",
         "url": "https://company-website.com",
         "description": "Description of what you did, impact you made, and problems you solved.",
-        "stack": ["Tech1", "Tech2", "Tech3"]
+        "stack": [
+            "Tech1",
+            "Tech2",
+            "Tech3"
+        ]
     }
 ]

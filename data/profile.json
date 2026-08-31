@@ -1,10 +1,10 @@
 {
     "name": "Nandan Pandey",
-    "title": "Software Developer",
-    "tagline": "Building reliable backend systems that survive real traffic.",
+    "title": "Backend Engineer",
+    "tagline": "Building scalable, reliable backend systems and real-time services.",
     "about": [
-        "I design APIs, queues, and data pipelines for products that need to scale without losing speed. My focus is clean architecture, observability, and infrastructure that teams can ship on with confidence.",
-        "I've spent 5+ years building backend systems — from monolith-to-microservice migrations to real-time event pipelines. I care about code that reads well, fails gracefully, and runs predictably under load."
+        "I’m a backend-focused software engineer with 5+ years of experience building production applications and backend systems. My work has ranged from React Native applications and Node.js backends to real-time gaming services and Go-based cybersecurity integrations.",
+        "I enjoy working on APIs, data systems, real-time communication, cloud services, and the engineering problems that make systems reliable and performant. My current work focuses primarily on TypeScript/Node.js, AWS, and cybersecurity integrations, with additional experience contributing to Go-based agent and inspector functionality."
     ],
     "email": "nandankpandey@gmail.com",
     "social": {
@@ -16,17 +16,17 @@
     "metrics": [
         {
             "value": "5+",
-            "label": "Years Backend Work"
+            "label": "Years Experience"
         },
         {
-            "value": "20+",
-            "label": "Production APIs"
+            "value": "<5 ms",
+            "label": "Peak API Response"
         },
         {
-            "value": "99.9%",
-            "label": "Target Uptime"
+            "value": "2×",
+            "label": "Smart India Hackathon Finalist"
         }
     ],
-    "availability": "Open to backend engineering roles and freelance API architecture work.",
+    "availability": "Open to backend engineering opportunities, especially roles involving Go, Node.js, distributed systems, real-time services, and performance-focused engineering.",
     "resumePath": "./assets/resume.pdf"
 }
